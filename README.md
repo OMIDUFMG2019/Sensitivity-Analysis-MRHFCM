@@ -1,1 +1,2 @@
-# Sensitivity-Analysis-MRHFCM
+## Sensitivity Analysis
+Sensitivity analysis evaluates the impact of input variable uncertainty on model output, assessing the significance of each input variable to the output. Thus, this repository contains the code focusing on analyzing the sensitivity of our proposed MRHFCM method. Firstly, the model is trained to obtain the optimal coefficients for each window in cross-validation. Afterward, we saved these coefficients and tested the trained model by adding noise to the initialized weights and biases to check the sensitivity of the MRHFCM method. The noise is a random sample from a standard normal distribution where the variance follows an exponential decreasing schedule, such as $\sigma = 1^{-k}$ for $k \in \{ 1,\dots,6\}$. 
